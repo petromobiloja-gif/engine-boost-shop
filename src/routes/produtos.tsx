@@ -13,9 +13,9 @@ export const Route = createFileRoute("/produtos")({
   validateSearch: searchSchema,
   head: () => ({
     meta: [
-      { title: "Produtos — AutoPerformance Hub" },
+      { title: "Produtos — PetroMobi" },
       { name: "description", content: "Catálogo completo de óleos lubrificantes, aditivos e produtos de arrefecimento. Filtre por categoria de veículo." },
-      { property: "og:title", content: "Catálogo de Produtos — AutoPerformance Hub" },
+      { property: "og:title", content: "Catálogo de Produtos — PetroMobi" },
       { property: "og:description", content: "Lubrificantes e produtos automotivos para todos os tipos de motores." },
     ],
   }),

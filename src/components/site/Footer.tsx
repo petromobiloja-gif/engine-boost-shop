@@ -30,7 +30,7 @@ export function Footer() {
               <div className="w-9 h-9 rounded-md bg-gradient-fire flex items-center justify-center">
                 <Gauge className="w-5 h-5 text-primary-foreground" strokeWidth={2.5} />
               </div>
-              <div className="font-display text-lg uppercase tracking-wider">Auto<span className="text-primary">Performance</span> Hub</div>
+              <div className="font-display text-lg uppercase tracking-wider">Petro<span className="text-primary">Mobi</span></div>
             </div>
             <p className="text-sm text-muted-foreground max-w-md">
               Lubrificantes de alta performance, aditivos e produtos para arrefecimento.
@@ -58,7 +58,7 @@ export function Footer() {
         </div>
 
         <div className="pt-6 border-t border-border/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-          <div>© {new Date().getFullYear()} AutoPerformance Hub. Todos os direitos reservados.</div>
+          <div>© {new Date().getFullYear()} PetroMobi. Todos os direitos reservados.</div>
           <div className="uppercase tracking-wider">Powered by Shopify</div>
         </div>
       </div>

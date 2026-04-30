@@ -4,10 +4,10 @@ import { Award, ShieldCheck, Wrench, Zap } from "lucide-react";
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "Sobre Nós — AutoPerformance Hub" },
+      { title: "Sobre Nós — PetroMobi" },
       { name: "description", content: "Especialistas em óleos lubrificantes de alta performance e produtos automotivos. Tecnologia, qualidade e confiança." },
-      { property: "og:title", content: "Sobre — AutoPerformance Hub" },
-      { property: "og:description", content: "Conheça nossa missão e os valores por trás da AutoPerformance Hub." },
+      { property: "og:title", content: "Sobre — PetroMobi" },
+      { property: "og:description", content: "Conheça nossa missão e os valores por trás da PetroMobi." },
     ],
   }),
   component: AboutPage,
@@ -21,7 +21,7 @@ function AboutPage() {
         <h1 className="font-display text-4xl md:text-5xl mb-6">A força por trás de cada motor</h1>
         <div className="space-y-4 text-muted-foreground leading-relaxed">
           <p>
-            A <strong className="text-foreground">AutoPerformance Hub</strong> é uma loja especializada na venda
+            A <strong className="text-foreground">PetroMobi</strong> é uma loja especializada na venda
             de óleos lubrificantes de alta performance para carros, motos e caminhões. Trabalhamos com uma
             linha completa que atende desde veículos leves até as aplicações mais exigentes do transporte e da indústria.
           </p>

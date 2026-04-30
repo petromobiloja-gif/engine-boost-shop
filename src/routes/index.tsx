@@ -8,9 +8,9 @@ import { ArrowRight, Award, Gauge, ShieldCheck, Wrench } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AutoPerformance Hub — Óleos lubrificantes de alta performance" },
+      { title: "PetroMobi — Óleos lubrificantes de alta performance" },
       { name: "description", content: "Lubrificantes, aditivos e produtos de arrefecimento para carros, motos e caminhões. Tecnologia avançada para máxima proteção do motor." },
-      { property: "og:title", content: "AutoPerformance Hub" },
+      { property: "og:title", content: "PetroMobi" },
       { property: "og:description", content: "Lubrificantes de alta performance para o seu motor." },
       { property: "og:image", content: heroImage },
       { name: "twitter:image", content: heroImage },

@@ -22,8 +22,7 @@ export function Header() {
             <Gauge className="w-5 h-5 text-primary-foreground" strokeWidth={2.5} />
           </div>
           <div className="leading-tight">
-            <div className="font-display text-lg uppercase tracking-wider">Auto<span className="text-primary">Performance</span></div>
-            <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground -mt-1">Hub</div>
+            <div className="font-display text-lg uppercase tracking-wider">Petro<span className="text-primary">Mobi</span></div>
           </div>
         </Link>
 

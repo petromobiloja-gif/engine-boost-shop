@@ -3,9 +3,9 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/politicas")({
   head: () => ({
     meta: [
-      { title: "Políticas — AutoPerformance Hub" },
-      { name: "description", content: "Políticas de troca, devolução e privacidade da AutoPerformance Hub." },
-      { property: "og:title", content: "Políticas — AutoPerformance Hub" },
+      { title: "Políticas — PetroMobi" },
+      { name: "description", content: "Políticas de troca, devolução e privacidade da PetroMobi." },
+      { property: "og:title", content: "Políticas — PetroMobi" },
       { property: "og:description", content: "Trocas, devoluções e privacidade." },
     ],
   }),

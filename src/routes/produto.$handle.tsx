@@ -19,7 +19,7 @@ export const Route = createFileRoute("/produto/$handle")({
     const img = p.images.edges[0]?.node?.url;
     return {
       meta: [
-        { title: `${p.title} — AutoPerformance Hub` },
+        { title: `${p.title} — PetroMobi` },
         { name: "description", content: (p.description ?? "").slice(0, 160) },
         { property: "og:title", content: p.title },
         { property: "og:description", content: (p.description ?? "").slice(0, 160) },
