@@ -3,7 +3,7 @@ import { Gauge, Shield, Truck, CreditCard, MessageCircle } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-border bg-surface/30">
+    <footer className="mt-8 border-t border-border bg-surface/30">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pb-10 border-b border-border/60">
           {[

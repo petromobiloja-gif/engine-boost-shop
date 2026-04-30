@@ -99,24 +99,6 @@ function HomePage() {
         <CategoryGrid />
       </section>
 
-      {/* BENEFITS */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-4 gap-4">
-          {[
-            { icon: Gauge, t: "Alta Performance", d: "Tecnologia para motores que exigem o máximo" },
-            { icon: ShieldCheck, t: "Proteção Total", d: "Reduz desgaste e prolonga vida útil" },
-            { icon: Award, t: "Qualidade Comprovada", d: "Atende normas API, ACEA e fabricantes" },
-            { icon: Wrench, t: "Suporte Técnico", d: "Orientação para a aplicação correta" },
-          ].map(({ icon: Icon, t, d }) => (
-            <div key={t} className="p-6 rounded-lg bg-card border border-border/60 hover:border-primary/40 transition-colors">
-              <Icon className="w-8 h-8 text-accent mb-3" strokeWidth={1.8} />
-              <h3 className="font-display text-base uppercase tracking-wide mb-1">{t}</h3>
-              <p className="text-sm text-muted-foreground">{d}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="container mx-auto px-4 py-12">
         <div className="relative overflow-hidden rounded-2xl bg-gradient-fire p-8 md:p-14 text-center">
@@ -132,6 +114,24 @@ function HomePage() {
               </Button>
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* BENEFITS */}
+      <section className="container mx-auto px-4 pt-16 pb-8">
+        <div className="grid md:grid-cols-4 gap-4">
+          {[
+            { icon: Gauge, t: "Alta Performance", d: "Tecnologia para motores que exigem o máximo" },
+            { icon: ShieldCheck, t: "Proteção Total", d: "Reduz desgaste e prolonga vida útil" },
+            { icon: Award, t: "Qualidade Comprovada", d: "Atende normas API, ACEA e fabricantes" },
+            { icon: Wrench, t: "Suporte Técnico", d: "Orientação para a aplicação correta" },
+          ].map(({ icon: Icon, t, d }) => (
+            <div key={t} className="p-6 rounded-lg bg-card border border-border/60 hover:border-primary/40 transition-colors">
+              <Icon className="w-8 h-8 text-accent mb-3" strokeWidth={1.8} />
+              <h3 className="font-display text-base uppercase tracking-wide mb-1">{t}</h3>
+              <p className="text-sm text-muted-foreground">{d}</p>
+            </div>
+          ))}
         </div>
       </section>
     </>
