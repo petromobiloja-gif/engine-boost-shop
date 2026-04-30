@@ -71,22 +71,18 @@ function HomePage() {
         </div>
       </section>
 
-      {/* BENEFITS */}
+      {/* FEATURED PRODUCTS */}
       <section className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-4 gap-4">
-          {[
-            { icon: Gauge, t: "Alta Performance", d: "Tecnologia para motores que exigem o máximo" },
-            { icon: ShieldCheck, t: "Proteção Total", d: "Reduz desgaste e prolonga vida útil" },
-            { icon: Award, t: "Qualidade Comprovada", d: "Atende normas API, ACEA e fabricantes" },
-            { icon: Wrench, t: "Suporte Técnico", d: "Orientação para a aplicação correta" },
-          ].map(({ icon: Icon, t, d }) => (
-            <div key={t} className="p-6 rounded-lg bg-card border border-border/60 hover:border-primary/40 transition-colors">
-              <Icon className="w-8 h-8 text-accent mb-3" strokeWidth={1.8} />
-              <h3 className="font-display text-base uppercase tracking-wide mb-1">{t}</h3>
-              <p className="text-sm text-muted-foreground">{d}</p>
-            </div>
-          ))}
+        <div className="flex items-end justify-between mb-8 gap-4">
+          <div>
+            <div className="text-xs uppercase tracking-[0.3em] text-accent mb-2">Destaques</div>
+            <h2 className="font-display text-3xl md:text-4xl">Produtos em Destaque</h2>
+          </div>
+          <Link to="/produtos" className="text-sm text-muted-foreground hover:text-primary uppercase tracking-wider items-center gap-1 hidden sm:inline-flex">
+            Ver todos <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
+        <ProductGrid limit={8} />
       </section>
 
       {/* CATEGORIES */}
@@ -103,18 +99,22 @@ function HomePage() {
         <CategoryGrid />
       </section>
 
-      {/* FEATURED PRODUCTS */}
+      {/* BENEFITS */}
       <section className="container mx-auto px-4 py-16">
-        <div className="flex items-end justify-between mb-8 gap-4">
-          <div>
-            <div className="text-xs uppercase tracking-[0.3em] text-accent mb-2">Destaques</div>
-            <h2 className="font-display text-3xl md:text-4xl">Produtos em Destaque</h2>
-          </div>
-          <Link to="/produtos" className="text-sm text-muted-foreground hover:text-primary uppercase tracking-wider items-center gap-1 hidden sm:inline-flex">
-            Ver todos <ArrowRight className="w-4 h-4" />
-          </Link>
+        <div className="grid md:grid-cols-4 gap-4">
+          {[
+            { icon: Gauge, t: "Alta Performance", d: "Tecnologia para motores que exigem o máximo" },
+            { icon: ShieldCheck, t: "Proteção Total", d: "Reduz desgaste e prolonga vida útil" },
+            { icon: Award, t: "Qualidade Comprovada", d: "Atende normas API, ACEA e fabricantes" },
+            { icon: Wrench, t: "Suporte Técnico", d: "Orientação para a aplicação correta" },
+          ].map(({ icon: Icon, t, d }) => (
+            <div key={t} className="p-6 rounded-lg bg-card border border-border/60 hover:border-primary/40 transition-colors">
+              <Icon className="w-8 h-8 text-accent mb-3" strokeWidth={1.8} />
+              <h3 className="font-display text-base uppercase tracking-wide mb-1">{t}</h3>
+              <p className="text-sm text-muted-foreground">{d}</p>
+            </div>
+          ))}
         </div>
-        <ProductGrid limit={8} />
       </section>
 
       {/* CTA */}
